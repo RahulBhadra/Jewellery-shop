@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gita's Collection</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.8.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="bg-dark">
+    <div class="header">
+        <div class="container text-center">
+            <img src="assets/img/logo.svg" alt="" class="img-fluid brand-logo">
+        </div>
+    </div>
+    <div class="banner-slider container my-4">
+        <img src="assets/img/banner1.svg" alt="" class="img-fluid" >
+        <img src="assets/img/banner2.svg" alt="" class="img-fluid">
+        <img src="assets/img/banner3.svg" alt="" class="img-fluid">
+    </div>
+    <div class="category-select">
+        <div class="container w-100">
+            <div class="category-item-holder">
+                <img src="assets/img/jewelleryCollection.svg" alt="" class="img-fluid" onclick="location.href = 'category.html'">
+                <img src="assets/img/dressCollection.svg" alt="" class="img-fluid" onclick="location.href = 'category.html'">
+            </div>
+        </div>
+    </div>
+
+    <div class="product-col py-5 px-3">
+        <div class="container">
+            <div class="product-col-header d-flex justify-content-between align-items-center">
+                <p class="font-weight-bold text-capitalize text-primary-light m-0">Latest Items</p>
+                <a href="#" class="text-primary-light text-decoration-none small text-capitalize" onclick="location.href = 'category.html'">more 
+                    <i class="mdi mdi-arrow-right"></i></a>
+            </div>
+            <div class="product-showcase mt-5">
+                <div class="card" data-product>
+                    <div class="product-image text-center position-relative">
+                        <img src="assets/img/kurta.svg" alt="" class="img-fluid">
+                        <button class="share" data-share>
+                            <i class="mdi mdi-share"></i>
+                        </button>
+                    </div>
+                    <div class="card-body text-primary-light pt-2">
+                        <p class="mb-2 text-capitalize text-truncate" data-productName>Kurta</p>
+                        <p class="h6 mt-0 mb-3" data-price>₹799.00</p>
+                        <button class="button w-100" onclick="location.href = 'cart.html'">Add to cart</button>
+                    </div>
+                </div>
+                <div class="card" data-product>
+                    <div class="product-image text-center position-relative">
+                        <img src="assets/img/ring.svg" alt="" class="img-fluid">
+                        <button class="share" data-share>
+                            <i class="mdi mdi-share"></i>
+                        </button>
+                    </div>
+                    <div class="card-body text-primary-light pt-2">
+                        <p class="mb-2 text-capitalize" data-productName>silver Ring</p>
+                        <p class="h6 mt-0 mb-3" data-price>₹599.00</p>
+                        <button class="button w-100" onclick="location.href = 'cart.html'">Add to cart</button>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    <div class="container-py-5 my-5"></div>
+    <div class="footer-nav fixed-bottom">
+        <div class="container">
+            <ul class="navbar p-0 mb-0">
+                <li class="navbar-items">
+                    <a href="main.html" class="nav-link active">
+                        <i class="mdi mdi-home-variant"></i>
+                    </a>
+                </li>
+                <li class="navbar-items">
+                    <a href="main-category.html" class="nav-link">
+                        <i class="mdi mdi-collage"></i>
+                    </a>
+                </li>
+                <li class="navbar-items search-button">
+                    <a href="search-page.html" class="nav-link ">
+                        <i class="mdi mdi-magnify"></i>
+                    </a>
+                </li>
+                <li class="navbar-items">
+                    <a href="cart.html" class="nav-link">
+                        <i class="mdi mdi-cart"></i>
+                    </a>
+                </li>
+                <li class="navbar-items">
+                    <a href="profile.html" class="nav-link">
+                        <i class="mdi mdi-account-circle"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $('.banner-slider').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            autoplay: true,
+        });
+    </script>
+</body>
+
+</html>
